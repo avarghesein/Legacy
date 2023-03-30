@@ -1,0 +1,127 @@
+[Root]
+Most Recent Package=project_sheduler_package
+
+
+[Package|project_sheduler_package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\DEV\VC++\VB98\miniprojects\packager
+
+[Package|project_sheduler_package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|project_sheduler_package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|project_sheduler_package|Files Found]
+
+[Package|project_sheduler_package|Files Released]
+
+[Package|project_sheduler_package|Missing Dependency Information]
+D:\WINDOWS\system32\msstdfmt.dll=
+D:\Program Files\Common Files\System\ado\msado25.tlb=
+
+[Package|project_sheduler_package|Out-of-Date Dependency Information]
+D:\WINDOWS\system32\comctl32.ocx=
+D:\WINDOWS\system32\mscomct2.ocx=
+D:\WINDOWS\system32\MSHFLXGD.OCX=
+D:\WINDOWS\system32\COMDLG32.OCX=
+D:\WINDOWS\system32\RICHTX32.OCX=
+
+[Package|project_sheduler_package|Files Added]
+e:\dev\vc++\vb98\miniprojects\phelp.txt=
+
+[Package|project_sheduler_package|Files Removed]
+d:\program files\common files\system\ado\msado25.tlb=
+
+[Package|project_sheduler_package|Files In Project]
+E:\DEV\VC++\VB98\miniprojects\sheduling.exe=Yes
+D:\WINDOWS\system32\msvbvm60.dll=Yes
+D:\WINDOWS\system32\oleaut32.dll=Yes
+D:\WINDOWS\system32\olepro32.dll=Yes
+D:\WINDOWS\system32\asycfilt.dll=Yes
+D:\WINDOWS\system32\stdole2.tlb=Yes
+E:\DEV\VC++\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\Program Files\Common Files\System\ado\msado25.tlb=No
+D:\Program Files\Common Files\Designer\MSDERUN.DLL=Yes
+D:\WINDOWS\system32\MSDBRPTR.DLL=Yes
+D:\WINDOWS\system32\msstdfmt.dll=Yes
+D:\WINDOWS\system32\MSMASK32.OCX=Yes
+D:\WINDOWS\system32\RICHTX32.OCX=Yes
+E:\DEV\VC++\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+D:\WINDOWS\system32\COMDLG32.OCX=Yes
+D:\WINDOWS\system32\MSHFLXGD.OCX=Yes
+D:\WINDOWS\system32\mscomct2.ocx=Yes
+D:\WINDOWS\system32\MSBIND.DLL=Yes
+D:\WINDOWS\system32\comctl32.ocx=Yes
+E:\DEV\VC++\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+E:\DEV\VC++\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+E:\DEV\VC++\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\WINDOWS\system32\VB6STKIT.DLL=Yes
+E:\DEV\VC++\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+E:\DEV\VC++\VB98\miniprojects\phelp.txt=Yes
+
+[Package|project_sheduler_package|Configure Registry Files]
+Applicable=No
+
+[Package|project_sheduler_package|Configure Remote Servers]
+Applicable=No
+
+[Package|project_sheduler_package|Install Locations]
+E:\DEV\VC++\VB98\miniprojects\sheduling.exe=$(AppPath)
+D:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+E:\DEV\VC++\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Common Files\System\ado\msado25.tlb=$(WinSysPath)
+D:\Program Files\Common Files\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+D:\WINDOWS\system32\MSDBRPTR.DLL=$(WinSysPath)
+D:\WINDOWS\system32\msstdfmt.dll=$(WinSysPath)
+D:\WINDOWS\system32\MSMASK32.OCX=$(WinSysPath)
+D:\WINDOWS\system32\RICHTX32.OCX=$(WinSysPath)
+E:\DEV\VC++\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+D:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+D:\WINDOWS\system32\MSHFLXGD.OCX=$(WinSysPath)
+D:\WINDOWS\system32\mscomct2.ocx=$(WinSysPath)
+D:\WINDOWS\system32\MSBIND.DLL=$(WinSysPath)
+D:\WINDOWS\system32\comctl32.ocx=$(WinSysPath)
+E:\DEV\VC++\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+E:\DEV\VC++\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+E:\DEV\VC++\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+E:\DEV\VC++\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+E:\DEV\VC++\VB98\miniprojects\phelp.txt=$(AppPath)
+
+[Package|project_sheduler_package|Configure Shared Files]
+Applicable=Yes
+E:\DEV\VC++\VB98\miniprojects\sheduling.exe=No
+E:\DEV\VC++\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+E:\DEV\VC++\VB98\miniprojects\phelp.txt=No
+
+[Package|project_sheduler_package|Distribution]
+Type=single
+Size=1.2 MB
+Title=PROJECT SHEDULER BY DSOFT
+
+[Package|project_sheduler_package|Package]
+PackageFolder=E:\DEV\VC++\VB98\miniprojects\packager
+ProjectFolder=E:\DEV\VC++\VB98\miniprojects
+ServerSideCab=
+File1=E:\DEV\VC++\VB98\miniprojects\packager\setup.exe
+File2=E:\DEV\VC++\VB98\miniprojects\packager\Setup.Lst
+File3=E:\DEV\VC++\VB98\miniprojects\packager\sheduling.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|project_sheduler_package|IconGroups]
+Group0=PROJECT SHEDULER BY DSOFT
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|project_sheduler_package|PROJECT SHEDULER BY DSOFT]
+Icon1=sheduling.exe
+Title1=PROJECT SHEDULER BY DSOFT
+StartIn1=$(AppPath)
+Key1=Icon1

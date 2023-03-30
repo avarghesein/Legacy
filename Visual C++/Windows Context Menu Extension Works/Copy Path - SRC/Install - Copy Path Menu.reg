@@ -1,0 +1,9 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell]
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\Copy Path]
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\Copy Path\Command]
+@="CopyPath.exe %1"
+

@@ -1,0 +1,14 @@
+       SPECIAL-NAMES.
+           CURSOR IS CURSOR-POSITION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+           SELECT INDEXED-FILE ASSIGN FILE-NAME
+                  ORGANIZATION INDEXED
+                  ACCESS DYNAMIC
+                  RECORD KEY REC-KEY
+                  STATUS IS FILE-STATUS.
+       DATA DIVISION.
+       FILE SECTION.
+       FD  INDEXED-FILE.
+       01  INDEXED-RECORD.
+           03 REC-KEY.

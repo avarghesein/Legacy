@@ -1,0 +1,48 @@
+
+
+
+HARDWARE REQUIREMENTS
+
+
+PROCESSOR  		-  INTEL CELERON OR PENTIUM SERIES, AMD SERIES.
+RAM	   		-  35 MB OR MORE.
+HARD DISK SPACE   	-  500MB+(SPACE FOR DATABASE).
+PRINTER   		-  DOT MATRIX OR INKJET.
+MONITOR  		-  SAMTRON OR OTHERS (15”/17”).
+
+SOFTWARE REQUIREMENTS
+
+OPERATING SYSTEM  -  ANY MULTITASKING OPERATING SYSTEM UNDER WINDOWS ( Eg: WINDOWS 98, WINDOWS XP, WINDOWS 2000 e.t.c).
+
+DATABASE REQUIREMENTS
+	One of the main thing that you need to run this package is that you must own a DATABASE. Since all the problems are stored in the database, it is a necessary. You can use either ORACLE or MS-ACCESS databases for the same. 
+	During the running of this software for first time, you must provide the details of the database for the software. This requires the following details.
+
+
+* PROVIDER OF THE DATABASE.
+* USER NAME OF THE DATABASE.
+* PASSWORD (if any).
+* THE DATA SOURCE.
+
+Problems related to the Operating system
+
+
+Some problems that are likely to happen are :
+
+
+*	If you are using Windows-XP or Windows-2000 or other operating systems with NT technology you need ORACLE-9I or higher products. ORACLE-8I products will not work on these environments.
+
+*	If you are using Windows98 or lower versions you need ORACLE-8I products, since ORACLE-9I will not work on such environments.
+
+*	MS-ACCESS will work on all the above mentioned environments but the FILE-FORMAT of the database has a major impact on the software.
+
+*	If you are using Windows of NT technology any FILE-FORMAT will work properly.
+
+*	If you are using Windows98 or lower versions and the FILE_FORMAT is of 2000 or higher , certain sections of the software will not work ; for ex: BRANCH & BOUND METHOD. This may happen if you copy a MS-ACCESS database from an
+	NT-environment to a Windows98 environment.
+
+
+
+
+
+

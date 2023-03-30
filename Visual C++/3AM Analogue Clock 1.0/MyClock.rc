@@ -1,0 +1,281 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MyClock.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MyClock.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MYCLOCK_DIALOG DIALOGEX 0, 0, 171, 156
+STYLE DS_MODALFRAME | WS_POPUP
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_GENERAL DIALOG DISCARDABLE  0, 0, 274, 122
+STYLE WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION
+CAPTION "General"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Show Date",IDC_CHK_SHW_DATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,16,60,10
+    CONTROL         "Show Time",IDC_CHK_SHW_TIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,79,16,50,10
+    PUSHBUTTON      "Change font..",IDC_BTN_CHOOSE_FONT,137,14,58,14
+    CONTROL         "Slider1",IDC_SLIDER_TRANS,"msctls_trackbar32",
+                    WS_TABSTOP,10,48,188,20
+    EDITTEXT        IDC_EDT_CLK_RAD,57,77,40,12,ES_AUTOHSCROLL
+    CONTROL         "Always On Top",IDC_CHK_ON_TOP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,78,60,10
+    CONTROL         "Auto Startup",IDC_CHK_AUTO_STRT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,137,92,60,10
+    GROUPBOX        "",IDC_STATIC,6,6,195,27
+    GROUPBOX        "Transparency",IDC_STATIC,6,38,195,33
+    LTEXT           "Clock Radius",IDC_STC_CLK_RAD,9,79,43,8
+    ICON            IDR_MAINFRAME,IDC_CLK_IMG,208,11,20,20
+END
+
+IDD_DIALOG_CONFIG DIALOG DISCARDABLE  0, 0, 264, 154
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "3AM Analogue Clock 1.0 - Customization"
+FONT 8, "Tahoma"
+BEGIN
+    PUSHBUTTON      "Apply",IDC_CONFG_APPLY,61,136,59,13,NOT WS_TABSTOP
+    PUSHBUTTON      "OK",IDC_CONFG_OK,123,136,59,13,NOT WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDC_CONFG_CANCEL,185,136,59,13,NOT WS_TABSTOP
+END
+
+IDD_DIALOG_COLOUR DIALOG DISCARDABLE  0, 0, 244, 84
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Colors"
+FONT 8, "Tahoma"
+BEGIN
+    PUSHBUTTON      "Change..",IDC_BTN_HR_HND_CLR,61,9,50,14
+    PUSHBUTTON      "Change..",IDC_BTN_MIN_HND_CLR,61,27,50,14
+    PUSHBUTTON      "Change..",IDC_BTN_SEC_HND_CLR,61,45,50,14
+    PUSHBUTTON      "Change..",IDC_BTN_TME_DGTS_CLR,186,9,50,14
+    PUSHBUTTON      "Change..",IDC_BTN_DGTL_DSPLY_CLR,186,27,50,14
+    PUSHBUTTON      "Change..",IDC_BTN_CLK_BKD_CLR,186,45,50,14
+    PUSHBUTTON      "Change..",IDC_BTN_DLG_BKD_CLR,186,63,50,14
+    LTEXT           "Hour Hand",IDC_STAT_HOUR_HND_CLR,8,12,35,8
+    LTEXT           "Minitue Hand",IDC_STAT_MIN_HND_CLR,8,30,42,8
+    LTEXT           "Second Hand",IDC_STAT_SEC_HND_CLR,8,48,53,8
+    LTEXT           "Time Digits",IDC_STAT_TIME_DGTS_CLR,122,12,35,8
+    LTEXT           "Digital Display",IDC_STAT_DGTL_DSPLY_CLR,122,30,45,8
+    LTEXT           "Clock Background",IDC_STAT_CLK_BK_CLR,122,48,60,8
+    LTEXT           "Dialog Background",IDC_STAT_DLG_BK_CLR,122,66,62,8
+END
+
+IDD_ABOUT_DLG DIALOG DISCARDABLE  0, 0, 186, 90
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "3AM Analogue Clock 1.0\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "3AM Analogue Clock 1.0\0"
+            VALUE "LegalCopyright", "Copyright (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "3AM Analogue Clock.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "3AM Analogue Clock 1.0\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MYCLOCK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_GENERAL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 273
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_DIALOG_COLOUR, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_ABOUT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CLOCK_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Main"
+    BEGIN
+        MENUITEM "About...",                    ID_MAIN_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Options...",                  ID_MAIN_OPTIONS
+        MENUITEM "Close",                       ID_MAIN_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_NAME            "3AM Analogue Clock 1.0"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MyClock.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

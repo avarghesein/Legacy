@@ -1,0 +1,7 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Folder\shell\DOS Prompt Here!]
+
+[HKEY_CLASSES_ROOT\Folder\shell\DOS Prompt Here!\Command]
+@="Cmd.exe /k cd \"%1\""
+

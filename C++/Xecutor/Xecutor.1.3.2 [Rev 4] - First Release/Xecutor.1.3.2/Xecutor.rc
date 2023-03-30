@@ -1,0 +1,212 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_XECUTOR             ICON                    "Xecutor.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_XECUTOR ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_XECUTOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_DLG_PROFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DLG_CONTROLLER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_XECUTOR DIALOGEX 0, 0, 180, 161
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT | WS_EX_STATICEDGE
+CAPTION "Xecutor"
+FONT 8, "Tahoma", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Add",IDC_BTN_ADDPROFILE,122,19,50,14
+    PUSHBUTTON      "Delete",IDC_BTN_DELETEPROFILE,122,51,50,14
+    LISTBOX         IDC_LST_PROFILES,7,19,109,135,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Profiles : ",IDC_LBL_PROFILES,7,8,33,8
+    PUSHBUTTON      "Edit",IDC_BTN_EDITPROFILE,122,35,50,14
+    PUSHBUTTON      "Cancel",IDC_BTN_CANCELXECUTOR,122,139,50,14
+    PUSHBUTTON      "Controller",IDC_BTN_SHOW_CONTROLLER,122,68,50,14
+END
+
+IDD_DLG_PROFILE DIALOGEX 0, 0, 329, 207
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Tahoma", 400, 0, 0x1
+BEGIN
+    LTEXT           "Script Path : *",IDC_LBL_SCRIPTFILE,7,33,55,8
+    EDITTEXT        IDC_TXT_SCRIPTFILE,86,33,219,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_BRSESCRIPT,309,33,13,13
+    LTEXT           "Dump Folder : *",IDC_LBL_DUMPFOLDER,7,47,55,8
+    EDITTEXT        IDC_TXT_DUMPFOLDER,86,47,219,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_BRSESDUMPFOLDER,309,47,13,13
+    LTEXT           "Dump Template  File : *",IDC_LBL_TEMPLATEFILE,7,61,77,8
+    EDITTEXT        IDC_TXT_TEMPLATEFILE,86,61,219,12,ES_AUTOHSCROLL
+    LTEXT           "User Name : *",IDC_LBL_USERNAME,7,85,53,8
+    EDITTEXT        IDC_TXT_USERNAME,86,85,219,12,ES_AUTOHSCROLL
+    LTEXT           "Password : ",IDC_LBL_PASSWORD,7,99,53,8
+    EDITTEXT        IDC_TXT_PASSWORD,86,99,219,12,ES_AUTOHSCROLL
+    LTEXT           "Extra Options : *",IDC_LBL_EXTRAOPT,7,138,53,8
+    EDITTEXT        IDC_TXT_EXTRAOPT,86,138,219,24,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    LTEXT           "Database Name : *",IDC_LBL_DBNAME,7,113,72,8
+    EDITTEXT        IDC_TXT_DBNAME,86,113,219,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Cancel",IDC_BTN_CANCEL,272,186,50,14
+    PUSHBUTTON      "&OK",IDC_BTN_OK,220,186,50,14
+    PUSHBUTTON      "&Apply",IDC_BTN_APPLY,168,186,50,14
+    LTEXT           "Schedule",IDC_LBL_SCHEDULE,7,169,55,8
+    LTEXT           "Hour : *",IDC_LBL_SCHHOUR,7,186,28,8
+    LTEXT           "Minitue : *",IDC_LBL_SCHMIN,74,186,35,8
+    EDITTEXT        IDC_TXT_SCHHOUR,40,186,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TXT_SCHMIN,112,186,26,12,ES_AUTOHSCROLL
+    LTEXT           "Profile Name : *",IDC_LBL_PROFILENAME,7,8,55,8
+    EDITTEXT        IDC_TXT_PROFILENAME,86,8,219,12,ES_AUTOHSCROLL
+    CONTROL         "Use Extra Options Only For Command Line",
+                    IDC_CHK_USEONLYEXTRA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,166,147,10
+END
+
+IDD_DLG_CONTROLLER DIALOGEX 0, 0, 337, 214
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Controller"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LST_CONTROLLER_PROFILES,7,7,260,200,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Terminate",IDC_BTN_TERMINATE_PROCESS,271,41,59,14
+    PUSHBUTTON      "Sta&rt Schedule",IDC_BTN_START_SCHED,271,24,59,14
+    PUSHBUTTON      "St&op Schedule",IDC_BTN_STOP_SCHED,271,7,59,14
+    PUSHBUTTON      "&Cancel",IDC_BTN_CANCEL_CONTROLLER,271,193,59,14
+    PUSHBUTTON      "&Terminate All",IDC_BTN_TERMINATE_ALL,271,159,59,14
+    PUSHBUTTON      "&Reset All",IDC_BTN_RESET_ALL,271,142,59,14
+    PUSHBUTTON      "&Restart Service",IDC_BTN_RESTART_SERVICE,271,176,59,14
+    PUSHBUTTON      "Re&fresh",IDC_BTN_CONTROLLER_REFRESH,271,100,59,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "Xecutor"
+    IDC_XECUTOR             "XECUTOR"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

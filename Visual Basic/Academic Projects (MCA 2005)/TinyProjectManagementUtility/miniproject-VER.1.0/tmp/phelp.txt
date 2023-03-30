@@ -1,0 +1,222 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0\fnil\fcharset0 MS Sans Serif;}{\f1\fnil\fcharset0 courier new;}}
+{\colortbl ;\red50\green50\blue170;}
+\viewkind4\uc1\pard\lang1033\f0\fs17  \cf1\f1\fs18\tab 
+\par 
+\par \tab\tab\tab   \tab 
+\par                        PROJECT SCHEDULER HELP TOPICS
+\par \tab\tab\tab   #############################
+\par 
+\par 
+\par 
+\par  1.SYSTEM REQUIREMENTS
+\par  ********************* 
+\par 
+\par   HARDWARE
+\par   --------
+\par 
+\par            Processor        -  INTEL Celeron or INTEL Pentium series, AMD processors.
+\par  
+\par            Ram              -  32 MB or more.
+\par  
+\par            Hard Disk Space  - 500 MB (SAMSUNG 40 GB HDD). 
+\par                  
+\par            Printer          -  Dot matrix (WIPRO LX-18] , Inkjet (HP-640C).
+\par 
+\par            Adapter Card     -  Any GUI supporting graphics card,
+\par                          
+\par                                Any super visual graphics adapter (SVGA)) like RIVA TNT.
+\par                
+\par            Monitor          -  SAMTRON 14"/15"/17".
+\par 
+\par 
+\par      
+\par   SOFTWARE 
+\par   --------
+\par   
+\par       You Must Have Windows95/98 or Windows NT/2000/XP,Operating Systems.\tab  
+\par \tab      
+\par 
+\par   PROBLEMS UNDER Windows XP
+\par   -------------------------
+\par 
+\par         When you are using Windows XP,You need Oracle 
+\par         products installed with Version 9I or greater.The 8I or 
+\par \tab  Preceeding Versions Will not  supported by XP.
+\par \tab\tab                
+\par   PROBLEMS UNDER Windows 95/98
+\par   ----------------------------
+\par 
+\par         When you are using Windows 95/98,You need Oracle 
+\par         Products installed with Version 8I or Lower.The 9I or 
+\par         Succeeding Versions Will not  supported by 95/98.
+\par \tab\tab          
+\par \tab  
+\par         MicroSoft JET ODBC Driver 4.0 will work with all these Operating
+\par         Systems.But we will not recommend this driver since it will Not
+\par \tab  Support all the features provided by the Software.
+\par                              
+\par   DATABASE REQUIREMENTS
+\par   --------------------- 
+\par 
+\par         You  need a DataBase for the Project Scheduler Software.
+\par         It may be either a MicroSoft Jet 4.0 DataBase(MicroSoft Access 
+\par         97/2000/2002 file formats) or a Database provided by Oracle.
+\par 
+\par         
+\par         WE STRICTLY RECOMMEND TO USE MICROSOFT OLEDB PROVIDER FOR ORACLE SINCE
+\par         MICRODOFT ACCESS WILL NOT SUPPORT ALL THE FEATURES PROVIDED BY THIS 
+\par         SOFTWARE.SO IF YOU ARE USING WINDOWS 95/98/2000 USE ORACLE PRODUCTS
+\par         WITH VERSION 8I.FOR WINDOWS XP USE 9I OR HIGHER VERSIONS.
+\par 
+\par         The database is used by the PScheduler for maintaining,
+\par         Scheduling details for later processing and for Security Purposes.
+\par 
+\par         During the very first use of the Software or After Removing
+\par         Windows Registry contents during the use of the software,
+\par         You can set database connection for the PScheduler.
+\par 
+\par         PSchedule creates & uses certain tables.So your data base
+\par         Must be blank(with no tables) or not containing the tables 
+\par         Listed below.Otherwise the PScheduler will behave abnormally.
+\par         It  will  create errors and the calculations are         
+\par         More error prone .It may cause Destruction of DATA in 
+\par         Your data base.
+\par 
+\par                     Projects, Tmp_Projects
+\par                     Subtasks, Tmp_Subtasks
+\par                     Predecessortasks, Tmp_Predecessortasks
+\par                     Passwordstore
+\par                     Projectinprogress, Tmp_Projectinprogress
+\par                     Successortasks, Tmp_Projectinprogress
+\par                     Person
+\par                     Admins
+\par                     Subtasksassignedto, Tmp_Subtasksassignedto
+\par                     Projectsassignedto, Tmp_Subtasksassignedto
+\par                     Register
+\par 
+\par 
+\par 
+\par   2.HOW TO USE THE SCHEDULER
+\par   *************************
+\par          
+\par         PRE-REQUEST
+\par         -----------
+\par 
+\par                     YOU MUST BE FAMILIAR WITH PROJECT EVALUATION & REVIEW TECHNIQUE (PERT),   
+\par         CRITICAL PATH METHOD(CPM).YOU MUST HAVE A THROUGH KNOWLEDGE IN PROJECT SCHEDULING &   
+\par         RELATED PROJECT NETWORKING CONCEPTS.IF YOU ARE NOT AQUAINTED WITH THESE REFER
+\par         THESE TECHNIQUES BEFORE USING THE SOFTWARE,SINCE IMMENSE CALCULATIONS DONE BY
+\par         THE PSCHEDULER IS BASED ON THESE CONCEPTS.         
+\par 
+\par                 
+\par                      PScheduler is controlled exclusiveley by Administrator Group.
+\par          For the first time Admin group can be created by the name & password 
+\par          provided by the software.The admins have the choice to add new admins &
+\par          change their passwords.
+\par 
+\par                      Beside the admin group,it also create & maintains a Personnel
+\par          database.So that Project & Task Managers are selected from this database.So
+\par          this software is fully meant for an entreprize or a Group. 
+\par  
+\par                      Admin have the right to add/edit/update the personnel information.
+\par           
+\par          CREATE A NEW PROJECT SCHEDULE
+\par          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\par 
+\par                       Select new-schedule from the ProjectSchedule menu in the Admin 
+\par          Options form.Fill the first form that appears,The details of the project. 
+\par 
+\par                       Now fill the next form.Give datails of Subtasks that constitutes
+\par          your project.
+\par                       After set the relationship among the tasks,in the order in which 
+\par          they will be carried out.  
+\par                       Finally choose close to complete the Scheduling.
+\par          The projectmanger is provided by a unique password to access his project & the
+\par          Register in which the persons holding the subtasks of the specified project makes  
+\par          entries.
+\par  
+\par          
+\par          UPDATE A SCHEDULE
+\par          ~~~~~~~~~~~~~~~~
+\par 
+\par                         A project manger can update his project.Admin can update any
+\par         project.Updating means entering the actual starting & ending status of a project.
+\par                         
+\par                         Admin can change the Mangers of projects or subtasks,so that
+\par         the projects/tasks can be assigned to efficient managers.Also he can change the
+\par         duration of the task or starting date of the project if it is not already started.
+\par 
+\par                         He can add a new subtask to a incompleted exsisting or active
+\par         project.For that there is forms for entering new task & setting its relation
+\par         with other tasks.
+\par          
+\par                         For all the activities described above,Scheduler provides provisions.
+\par         
+\par         Also admin can delete a schedule or recall a deleted schedule.
+\par 
+\par         
+\par         ANALYSING A PROJECT
+\par         ~~~~~~~~~~~~~~~~~~~
+\par                           
+\par                            There is two kind of analysis.
+\par 
+\par                  I.Personnel Analysis                                  
+\par                  II.Project/task Analysis.
+\par 
+\par         
+\par                  Personnel analysis means evaluating the working range of persons
+\par         in projects & subtasks.For this a special register is provided.Each task manager
+\par         can make an entry in the register for the task assigned to him for each day
+\par         he appears for work for the mentioned task.Also a person can work for several
+\par         tasks of the same project or differant projects.
+\par                  A person can enter to register with a previlage to access the registry
+\par         contents of the tasks assigned to him.
+\par                  A project manager have full access to the register in the sense that
+\par         he can access the Task Manger's register contents who worked under the project
+\par         manager.In other words he can access all registry contents of subtasks under
+\par         his project.
+\par                  A admin have a full access to all tasks in all projects in the register.
+\par 
+\par                  There provided a REPORT for the administrator to view the persons
+\par        worked under a project/ worked under a task.Their(person's) status with respect
+\par        to the project/task.This report gives the persons worked for a project during an
+\par        interval.
+\par 
+\par 
+\par 
+\par 
+\par                   Project/Task analysis means analysing the project with it's preassumed
+\par        standards.The comparison is taken between the preassumed standards & the real 
+\par        progress of task/project.It says whether the task/project started properly with in
+\par        the time interval specified,if not it's affect on the whole project and it's 
+\par        successortasks.We can also have look into the affect of predecessortask on a task.
+\par        The project's Progress can be clearly found out.The delay in the project or the
+\par        Minimum delay in the project can be predicted.
+\par 
+\par                   All the calculation are based on PERT(Project Evaluaton Technique).
+\par        The tools used to evaluate a project are,
+\par 
+\par                   PERT.
+\par                   EARLY START.
+\par                   LATE  START.
+\par                   REAL  START.
+\par                   CRITICAL PATH METHOD(CPM).
+\par 
+\par        For Visual or graphical Analysis of The project There are some tools Provided.
+\par 
+\par                   GANTT CHARTS    
+\par                   -----------
+\par                         EARLY START GANTT CHART.
+\par                         LATE  START GANTT CHART.
+\par                         REAL  START GANTT CHART.
+\par   
+\par        Also there provided a  MAIN PROJECT REPORT that tells the current status of the
+\par        project with respect to the assumed standards.Also there provided different 
+\par        REPORTS on the subtasks,their affect on successortasks,affect of predecessortasks.
+\par        Also report provided for CRITICALPATH EVALUATION. 
+\par 
+\par 
+\par 
+\par *------------------*----------------------*---------------------------*--------------------*          
+\par }
+ 

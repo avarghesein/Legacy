@@ -1,0 +1,28 @@
+
+
+	Database Related Problems, their solutions (during running of OpTech)
+	---------------------------------------------------------------------
+
+                 Don't try to delete the folder named "sdbase" and the contents 
+	   reside in it, especially the database file "dbOptech".Any attempt
+	   to move or delete these objects from thier absolute place will cause
+	   malfunctioning of "OpTech". Never try to modify the design and data-
+	   records of the database file "dbOpTech", if you does "OpTech" will 
+           not work properly.
+                 
+                 If you already lost these objects, then run "OpTech" any way.
+           Choose the option to make use of the "Default database". This will allow 	 	   you to build/create a "new database" for "OpTech".It then restores
+	   all the objects that you lost. But all the previously stored problems
+	   will be lost.
+
+		If you don't have "Microsoft Access" then creation of "new database"
+	   will not work and in that case installing "MS-Access" first and then
+           rerunning "OpTech" may resolve the problem.
+
+		An easy way can be chosen if you alredy owns a database of "MS-Access"
+	   or "Oracle".Run "OpTech", Choose "No" for the option to select the "Default 	   
+	   Database", during the running of "OpTech" and specify the database details 		   in the form provided. This database will be used by "OpTech" for after 	           
+	   runnings.		    
+		  
+		If you are frequently obtaining errors from database, then delete
+	   the database that causing problems, and then rerun "OpTech". Now either 		   select option for creating new database or select another existing 	   database.

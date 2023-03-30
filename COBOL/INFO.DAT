@@ -1,0 +1,34 @@
+
+
+        1:MASTER FILE=>EMPFILE.DAT
+                  [ PRODUCED BY EMPFILE.COB ]
+          TRANSACTION FILE=>TRANS.DAT
+                  [ PRODUCED BY TRANS.COB   ]
+          REPORT FILE=>EUPDATE.DAT
+                  [ PRODUCED BY EUPDATE.COB ]
+
+          ( Report file is made by updating Master file
+            file by Transaction file.Also Master file is
+            also updated.Master & transaction files must
+            be sorted on the CODE field in ascending order
+            inorder for updation otherwise ERROR message
+            will be printed on running EUPDATE )
+
+
+
+        2:TRANSACTION1=>T1.DAT
+          TRANSACTION2=>T2.DAT
+          MASTER      =>MERGE.DAT
+
+          ( Master file is prepared by merging contents of T1.DAT
+            T2.DAT to MERGE.DAT by program MERGE.COB,the 2 transaction
+            files must be sorted on CDE field.Also T1.DAT & T2.DAT
+            is prepared by copying EMPFILE.DAT to these two & making
+            changes to records )
+
+       3:SORT.COB sorts the following files
+
+         1.TRANS.DAT
+         2.EMPFILE.DAT
+         3.T1.DAT
+         4.T2.DAT

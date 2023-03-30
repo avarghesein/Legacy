@@ -1,0 +1,164 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Package
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+MYHELP.HLP=E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\HELP\MYHELP.HLP
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 1|Files Added]
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\sdbase\dbOpTech.mdb=
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\HELP\MYCRON2.cnt=
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Read me(dbase).txt=
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Read me_2.txt=
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\readme_1.txt=
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\OpTech.exe=Yes
+D:\WINDOWS\system32\msvbvm60.dll=Yes
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\Program Files\Common Files\Designer\MSDERUN.DLL=Yes
+D:\Program Files\Common Files\Microsoft Shared\DAO\dao360.dll=Yes
+D:\WINDOWS\system32\msjet40.dll=Yes
+D:\WINDOWS\system32\msjter40.dll=Yes
+D:\WINDOWS\system32\msjint40.dll=Yes
+D:\WINDOWS\system32\vbajet32.dll=Yes
+D:\WINDOWS\system32\expsrv.dll=Yes
+D:\WINDOWS\system32\mswstr10.dll=Yes
+D:\WINDOWS\system32\mswdat10.dll=Yes
+D:\WINDOWS\system32\msrd2x40.dll=Yes
+D:\WINDOWS\system32\msrd3x40.dll=Yes
+D:\WINDOWS\system32\msrepl40.dll=Yes
+D:\WINDOWS\system32\msjtes40.dll=Yes
+D:\WINDOWS\system32\VB5DB.DLL=Yes
+D:\WINDOWS\system32\odbcconf.dll=Yes
+D:\WINDOWS\system32\MSHFLXGD.OCX=Yes
+D:\WINDOWS\system32\msstdfmt.dll=Yes
+D:\WINDOWS\system32\COMCTL32.OCX=Yes
+D:\WINDOWS\system32\COMDLG32.OCX=Yes
+D:\WINDOWS\system32\RICHTX32.OCX=Yes
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+D:\WINDOWS\system32\mscomctl.ocx=Yes
+D:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+D:\WINDOWS\system32\FM20.DLL=Yes
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\HELP\MYHELP.HLP=Yes
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\WINDOWS\system32\VB6STKIT.DLL=Yes
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\sdbase\dbOpTech.mdb=Yes
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\HELP\MYCRON2.cnt=Yes
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Read me(dbase).txt=Yes
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Read me_2.txt=Yes
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\readme_1.txt=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\OpTech.exe=$(AppPath)
+D:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Common Files\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+D:\Program Files\Common Files\Microsoft Shared\DAO\dao360.dll=$(MSDAOPath)
+D:\WINDOWS\system32\msjet40.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\msjter40.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\msjint40.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\mswstr10.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\mswdat10.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\msrd2x40.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\msrd3x40.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\msrepl40.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\msjtes40.dll=$(WinSysPathSysFile)
+D:\WINDOWS\system32\VB5DB.DLL=$(WinSysPath)
+D:\WINDOWS\system32\odbcconf.dll=$(AppPath)
+D:\WINDOWS\system32\MSHFLXGD.OCX=$(WinSysPath)
+D:\WINDOWS\system32\msstdfmt.dll=$(WinSysPath)
+D:\WINDOWS\system32\COMCTL32.OCX=$(WinSysPath)
+D:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+D:\WINDOWS\system32\RICHTX32.OCX=$(WinSysPath)
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+D:\WINDOWS\system32\mscomctl.ocx=$(WinSysPath)
+D:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+D:\WINDOWS\system32\FM20.DLL=$(WinSysPath)
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\HELP\MYHELP.HLP=$(AppPath)\HELP\
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\sdbase\dbOpTech.mdb=$(AppPath)\sdbase\
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\HELP\MYCRON2.cnt=$(AppPath)\HELP\
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Read me(dbase).txt=$(AppPath)
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Read me_2.txt=$(AppPath)
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\readme_1.txt=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\OpTech.exe=No
+D:\WINDOWS\system32\odbcconf.dll=No
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\HELP\MYHELP.HLP=No
+E:\DEV\visual studio 6\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\sdbase\dbOpTech.mdb=No
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\HELP\MYCRON2.cnt=No
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Read me(dbase).txt=No
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Read me_2.txt=No
+E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\readme_1.txt=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=OpTech 1.0
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=OpTech 1.0
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|OpTech 1.0]
+Icon1=OpTech.exe
+Title1=OpTech 1.0
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Package
+ProjectFolder=E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)
+ServerSideCab=
+File1=E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Package\setup.exe
+File2=E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Package\Setup.Lst
+File3=E:\DEV\visual studio 6\VB98\OpTech-Project(1.0)\Package\OpTech.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

@@ -1,0 +1,29 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\dllfile\shell]
+[HKEY_CLASSES_ROOT\dllfile\shell\Register COM Server]
+[HKEY_CLASSES_ROOT\dllfile\shell\Register COM Server\command]
+@="RegisterCOMServer.exe 1 %1"
+
+[HKEY_CLASSES_ROOT\ocxfile\shell]
+[HKEY_CLASSES_ROOT\ocxfile\shell\Register COM Server]
+[HKEY_CLASSES_ROOT\ocxfile\shell\Register COM Server\command]
+@="RegisterCOMServer.exe 1 %1"
+
+[HKEY_CLASSES_ROOT\exefile\shell]
+[HKEY_CLASSES_ROOT\exefile\shell\Register COM Server]
+[HKEY_CLASSES_ROOT\exefile\shell\Register COM Server\command]
+@="RegisterCOMServer.exe 1 %1"
+
+[HKEY_CLASSES_ROOT\dllfile\shell\Unregister COM Server]
+[HKEY_CLASSES_ROOT\dllfile\shell\Unregister COM Server\command]
+@="RegisterCOMServer.exe 0 %1"
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\Unregister COM Server]
+[HKEY_CLASSES_ROOT\ocxfile\shell\Unregister COM Server\command]
+@="RegisterCOMServer.exe 0 %1"
+
+[HKEY_CLASSES_ROOT\exefile\shell\Unregister COM Server]
+[HKEY_CLASSES_ROOT\exefile\shell\Unregister COM Server\command]
+@="RegisterCOMServer.exe 0 %1"
+

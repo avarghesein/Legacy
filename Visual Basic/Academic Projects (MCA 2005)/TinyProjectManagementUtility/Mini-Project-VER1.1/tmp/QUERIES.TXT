@@ -1,0 +1,40 @@
+create table projects(projid number(7),projname varchar2(30),projdesc  varchar2(200),projduration number(8),projstartdate date,projmanager   number(7),completed varchar2(1),deleted varchar2(1),primary key(projid));
+
+
+create table subtasks(taskid  number(7),projid  number(7),taskname varchar2(30),taskdesc varchar2(200),taskduration number(20),taskearly date,tasklate date,taskmanager number(7),primary key(projid,taskid),foreign key(projid) references projects) ;
+
+
+
+create table predecessortasks(taskid number(7),projid number(7) ,taskrelated number(7),foreign key(projid,taskid) references subtasks); 
+
+
+create table passwordstore(projid  number(7),projmanager  number(7),projpassword varchar2(50) ,primary key(projid),foreign key(projid) references projects) ;
+
+
+create table projectinprogress(taskid  number(7),projid  number(7),startdate date,enddate date,primary key(projid,taskid),foreign key(projid,taskid) references subtasks);
+
+
+create table successortasks(taskid  number(7),projid  number(7),taskrelated number(7),foreign key(projid,taskid) references subtasks) ;
+
+create table person(name varchar2(50),address varchar2(200),age date,sex varchar2(1),id number(7),workingfor varchar2(200),fieldinterested varchar2(25),qualification
+varchar2(100),remarks varchar2(200),exsist varchar2(1),primary key(id));
+
+ 
+
+create table  admins(name varchar2(50),pass  varchar2(50),primary key(name,pass));
+
+
+
+create table subtasksassignedto(personid number(7),projid number(7),taskid number(7),assigneddate date,status varchar2(1),
+foreign key(personid) references person,foreign key(projid,taskid) references subtasks);
+
+
+create table projectsassignedto(personid  number(7),projid  number(7),assigneddate  date,status varchar2(1),
+foreign key(personid) references person,foreign key(projid) references projects);
+ 
+
+
+create table register(personid number(7),projid number(7),taskid number(7),entrydate date,enteringtime date,leavingtime date,remarks varchar2(200),difficulties varchar2(200),
+errors varchar2(200),foreign key(personid) references person);
+
+
