@@ -1,5 +1,5 @@
 # Legacy Projects
-## Requires Visual Studio 6 or VB6.0 Runtime
+## Requires Visual Studio 6 (Visual C++ 6 & VB6.0 Runtime)
 
 Update: Tested With Visual Studio 6 in Windows7 64bit .During Install unselect Visual Source Safe, Foxpro components.
 
