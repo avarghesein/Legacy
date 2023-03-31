@@ -3,6 +3,11 @@
 
 Update: Tested With Visual Studio 6 in Windows7 64bit .During Install unselect Visual Source Safe, Foxpro components.
 
+Setup [Visual Studio 6](https://drive.google.com/file/d/1HCQeCB7RgjWHm7E6grwpQc3X2yAIUd_i/view?usp=share_link) with [WindowsXP-SP3](https://drive.google.com/file/d/1gn0Yu9zm7HYnRf2DvoVWI8m8ioA809Ul/view?usp=share_link), in [VirtualBox](https://www.virtualbox.org/wiki/Downloads), to run these projects in any recent platforms without any compatibility issues.
+
+Click the above links to download Visual Studio 6 and Windows XP.
+
+
 # Key Projects
 
 ## [OpTech](https://github.com/avarghesein/Legacy/tree/master/Visual%20Basic/Academic%20Projects%20(MCA%202005)/OpTech-Project(1.0)): Uses different Statistical Methods to Solve Problems Step/Step
