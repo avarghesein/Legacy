@@ -1,7 +1,12 @@
 # Legacy Projects
-## Requires Visual Studio 6 or VB6.0 Runtime
+## Requires Visual Studio 6 (Visual C++ 6 & VB6.0 Runtime)
 
 Update: Tested With Visual Studio 6 in Windows7 64bit .During Install unselect Visual Source Safe, Foxpro components.
+
+Setup [Visual Studio 6](https://drive.google.com/file/d/1HCQeCB7RgjWHm7E6grwpQc3X2yAIUd_i/view?usp=share_link) with [WindowsXP-SP3](https://drive.google.com/file/d/1gn0Yu9zm7HYnRf2DvoVWI8m8ioA809Ul/view?usp=share_link), in [VirtualBox](https://www.virtualbox.org/wiki/Downloads), to run these projects in any recent platforms without any compatibility issues.
+
+Click the above links to download Visual Studio 6 and Windows XP.
+
 
 # Key Projects
 
@@ -47,6 +52,6 @@ Support the below type of Statistical Problems
 
 ![](https://github.com/avarghesein/Legacy/blob/master/Visual%20Basic/Academic%20Projects%20(MCA%202005)/ScienTech.1.0/ScreenShot.png)
 
-## [3AM Clock](https://github.com/avarghesein/Legacy/tree/master/Visual%20C%2B%2B/3AM%20Analogue%20Clock%201.0): Double Buffered Configurable Analogue Cock 
+## [3AM Clock](https://github.com/avarghesein/Legacy/tree/master/Visual%20C%2B%2B/3AM%20Analogue%20Clock%201.0): Double Buffered Configurable Analogue Clock 
 
 ![](https://github.com/avarghesein/Legacy/blob/master/Visual%20C%2B%2B/3AM%20Analogue%20Clock%201.0/ScreenShot.png)
