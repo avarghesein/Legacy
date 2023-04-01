@@ -1,0 +1,62 @@
+// Sample Server.idl : IDL source for Sample Server.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Sample Server.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	
+	
+	[
+		object,
+		uuid(619E413C-4829-4E97-BAC6-FFB76ADBD034),
+		dual,
+		helpstring("ICallBackReply Interface"),
+		pointer_default(unique)
+	]
+	interface ICallBackReply : IDispatch
+	{
+		[id(1), helpstring("method OnReply")] HRESULT OnReply([in]BSTR bstr,[out]BSTR* P);
+	};
+
+	[
+		object,
+		uuid(2FCDA75A-43A1-4349-8037-3B89BE1B62C3),
+		dual,
+		helpstring("IFun Interface"),
+		pointer_default(unique)
+	]
+	interface IFun : IDispatch
+	{
+		[id(1), helpstring("method SayHello")] HRESULT SayHello([in]BSTR bstrSTR);
+		[id(2), helpstring("method InvokeCallBack")] HRESULT InvokeCallBack([in]ICallBackReply* pCallBack);
+	};	
+
+[
+	uuid(C863264D-6CEE-4A84-836E-E1C7F61A2BD3),
+	version(1.0),
+	helpstring("Sample Server 1.0 Type Library")
+]
+library SAMPLESERVERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(32C2E095-ACD6-454D-8332-0DCB8790263C),
+		helpstring("Fun Class")
+	]
+	coclass Fun
+	{
+		[default] interface IFun;
+	};
+	[
+		uuid(6E585F10-E1EB-451A-94DA-4F460080DB46),
+		helpstring("CallBackReply Class")
+	]
+	coclass CallBackReply
+	{
+		[default] interface ICallBackReply;
+	};
+};

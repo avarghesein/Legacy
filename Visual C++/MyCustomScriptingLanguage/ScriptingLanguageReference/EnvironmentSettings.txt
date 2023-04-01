@@ -1,0 +1,44 @@
+
+IF| <ENV_SETTINGS_INCLUDED>
+  RETURN|
+ENDIF|
+SET| <ENV_SETTINGS_INCLUDED> = 1
+
+;Setup Mode
+IF_NOT| <SETUP>
+    SET| <SETUP> = SYNGO
+ENDIF|
+
+;-------------------Start Your Specific Settings----------------------------;
+
+;SYNGO ENV VARS
+
+SET| <SLUGGER_HOME> = C:\UL-SLUGGER\
+
+SET| <SYNGO_HOME> = C:\ETA\
+SET| <SYNGO_MPLUS_PLATFORM> = C:\MPlusPlatform\
+SET| <SYNGO_MPLUSINSTTYPE> = \
+
+SET| <UNIX_UTILS> = D:\ProgramFiles\UnxUtils\
+SET| <PERL_UTILS> = D:\ProgramFiles\Perl\
+
+SET| <SYNGO_DNM_TEMP> = C:\Temp\DNM
+SET| <SYNGO_MMM_TEMP> = C:\Temp\MMM
+SET| <SYNGO_PMTF_TEMP> = C:\Temp\PMTF
+SET| <SYNGO_MPLUS_DBS_TEMP> = E:\TEMP
+
+
+
+;MPLUS ENV VARS
+
+SET| <MPLUS_V3_HOME> = C:\MplusV3
+
+SET| <MPLUS_V3_ALTIBASE_HOME> = C:\Program Files\Altibase\Altibase5_Server\altibase_home
+
+SET| <MPLUS_V3_MPLUSPLATFORM> = <MPLUS_V3_HOME>\MPlusPlatform\
+SET| <MPLUS_V3_MPLUSINSTTYPE> = \release\
+
+
+;-------------------End Your Specific Settings----------------------------;
+
+

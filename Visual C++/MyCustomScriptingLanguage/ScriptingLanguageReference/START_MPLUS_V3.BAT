@@ -1,0 +1,1 @@
+MVersionSelector.exe -f "StartMplusOrSyngo.txt" -e "<SETUP>=MPLUS" -v

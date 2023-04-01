@@ -1,0 +1,45 @@
+
+INCLUDE| "EnvironmentSettings.txt"
+
+UNSET| DICOM_UID_ROOT
+
+UNSET| MPLUS_DBS_TEMP
+UNSET| DNM_TEMP
+UNSET| MMM_TEMP
+UNSET| PMTF_TEMP
+UNSET| MPLUSTEMPDIR
+
+UNSET| MERGECOM_CONF
+UNSET| MERGE_INI
+
+UNSET| MPLUSHOME
+UNSET| MPLUSCONFDIR
+UNSET| MPLUSDATADIR
+UNSET| MPLUSI18NCORE
+UNSET| MPLUSINSTTYPE
+UNSET| MPLUSLOGDIR
+
+UNSET| ALTIBASE_HOME
+
+
+BEGIN|
+    SET| PATH -= <MPLUS_V3_HOME>*
+    SET| PATH -= <SYNGO_HOME>*
+    SET| PATH -= <SLUGGER_HOME>*
+    SET| PATH -= <UNIX_UTILS>*
+    SET| PATH -= <PERL_UTILS>*
+    SET| PATH -= <SYNGO_MPLUS_PLATFORM>*
+END|
+ENV_COMMIT|
+
+BEGIN|
+    REG| [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build System\Components\Platforms\Win32 (x86)\Directories]
+         Include Dirs -=<MPLUS_V3_HOME>*
+	 Include Dirs -=<SYNGO_HOME>*;<SLUGGER_HOME>*;
+
+    REG| [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build System\Components\Platforms\Win32 (x86)\Directories]
+	 Library Dirs -=<MPLUS_V3_HOME>*
+         Library Dirs -=<SYNGO_HOME>*;<SLUGGER_HOME>*;
+
+END|
+REG_COMMIT|

@@ -1,0 +1,24 @@
+HKCR
+{
+	CallBackReply.CallBackReply.1 = s 'CallBackReply Class'
+	{
+		CLSID = s '{6E585F10-E1EB-451A-94DA-4F460080DB46}'
+	}
+	CallBackReply.CallBackReply = s 'CallBackReply Class'
+	{
+		CLSID = s '{6E585F10-E1EB-451A-94DA-4F460080DB46}'
+		CurVer = s 'CallBackReply.CallBackReply.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {6E585F10-E1EB-451A-94DA-4F460080DB46} = s 'CallBackReply Class'
+		{
+			ProgID = s 'CallBackReply.CallBackReply.1'
+			VersionIndependentProgID = s 'CallBackReply.CallBackReply'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{584D4FCE-AAB4-4AB8-8294-83D04955DF4F}'
+			'TypeLib' = s '{C863264D-6CEE-4A84-836E-E1C7F61A2BD3}'
+		}
+	}
+}

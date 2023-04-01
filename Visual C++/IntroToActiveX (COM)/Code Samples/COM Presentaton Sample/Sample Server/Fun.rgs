@@ -1,0 +1,27 @@
+HKCR
+{
+	Fun.Fun.1 = s 'Fun Class'
+	{
+		CLSID = s '{32C2E095-ACD6-454D-8332-0DCB8790263C}'
+	}
+	Fun.Fun = s 'Fun Class'
+	{
+		CLSID = s '{32C2E095-ACD6-454D-8332-0DCB8790263C}'
+		CurVer = s 'Fun.Fun.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {32C2E095-ACD6-454D-8332-0DCB8790263C} = s 'Fun Class'
+		{
+			ProgID = s 'Fun.Fun.1'
+			VersionIndependentProgID = s 'Fun.Fun'
+			ForceRemove 'Programmable'
+			%Server32% = s '%Module%'
+			{
+	    			val ThreadingModel = s 'Neutral'
+			}
+			val AppID = s '{584D4FCE-AAB4-4AB8-8294-83D04955DF4F}'
+			'TypeLib' = s '{C863264D-6CEE-4A84-836E-E1C7F61A2BD3}'
+		}
+	}
+}

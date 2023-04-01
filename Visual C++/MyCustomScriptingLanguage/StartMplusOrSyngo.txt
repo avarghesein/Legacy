@@ -1,0 +1,46 @@
+
+INCLUDE| "EnvironmentSettings.txt"
+
+IF_NOT| <SETUP>
+    QUIT|
+ENDIF|
+
+;Code Block, <Change If need any spcific handling>
+IF| <SETUP> = SYNGO
+    RUN| kill mplus*
+    RUN| kill csa*
+    RUN| kill ipt*
+    RUN| kill ivt*
+    RUN| kill cleanb*
+    RUN| kill Patex*
+    RUN| kill Patex B*
+    RUN| CMD /C killz.js
+    RUN| CMD /C stopz.js
+    RUN| CMD /C kill_mr
+
+    WAIT| After, Previous Applicatons Killed [KillZ.js], Press Any Key!!!
+    CHDIR| <SLUGGER_HOME>\bin
+    RUN| START /WAIT startz.js
+
+    WAIT| After, 'CsaSecServer' Properly Initialized, Press Any Key!!!
+    RUN| START mplussoftwaremanager
+    RUN| START mplussmviewer
+ELSE|
+    RUN| kill mplus*
+    RUN| kill csa*
+    RUN| kill ipt*
+    RUN| kill ivt*
+    RUN| kill cleanb*
+    RUN| kill Patex*
+    RUN| kill Patex B*
+    RUN| CMD /C killz.js
+    RUN| CMD /C stopz.js
+    RUN| CMD /C kill_mr
+
+    WAIT| After, Previous Applicatons Killed [Kill_MR], Press Any Key!!!
+
+    CHDIR| <MPLUS_V3_ALTIBASE_HOME>\bin
+    RUN| CMD /C "SERVER start"
+    RUN| START mplussoftwaremanager
+    RUN| START mplussmviewer    
+ENDIF|

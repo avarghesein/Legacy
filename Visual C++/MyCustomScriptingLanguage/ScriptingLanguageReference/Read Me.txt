@@ -1,0 +1,45 @@
+
+1. To Setup or Switch Syngo/Mplus
+
+	1.1 [**IMPORTANT**] Update "EnvironmentSettings.txt", as per you system Settings
+
+        1.2 [**IMPORTANT**] Take a Back of the following Registry Locations (EXPORT using RegEdit)
+
+		1.2.1 [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build System\Components\Platforms\Win32 (x86)\Directories]
+		1.2.2 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment]
+
+	1.3 Setting up SYNGO or MPLUS V3
+
+		1.3.1 To Setup SYNGO run 'SETUP_SYNGO.BAT'
+		1.3.2 To Setup MplusV3 run 'SETUP_MPLUS_V3.BAT'
+
+	1.4 You will see 'Wait', commands on Script Execution and press any key as soon as you find its okay to continue
+
+
+2. To Run Softwaremanager for Syngo/Mplus
+	
+	2.1 Running SYNGO or MPLUS V3
+
+		2.1.1 To Start SYNGO run 'START_SYNGO.BAT'	
+		2.1.2 To Start MPLUS run 'START_MPLUS_V3.BAT'
+
+
+
+3. Use 'KILL ALL.BAT', to kill both SYNGO/MPLUS
+
+4. Use 'CLEAN_ENVIRONMENT.BAT', to remove Environment variables for MPlus V3/SYNGO, Which is set by the Setup Scripts
+
+Things To Be Noted:
+
+	*) If you have the V3 and V2 database on the same drive switch the same before running the scripts
+	*) You can find a detaild log '[Directory('MVersionSelector.exe']\Logs-MVSelector\[ScriptFileWithoutExt].log' on script execution
+	*) You can update/create the scripts by your own if needed. (Please contact me, on how to edit scripts).
+	   For Ex: you can configure PCC instead of SoftwareManager.
+
+
+Please let me know your feedbacks and suggessions. Thanks !!!
+	
+
+
+
+

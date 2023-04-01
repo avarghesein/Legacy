@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{584D4FCE-AAB4-4AB8-8294-83D04955DF4F} = s 'Sample Server'
+		'Sample Server.EXE'
+		{
+			val AppID = s {584D4FCE-AAB4-4AB8-8294-83D04955DF4F}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+MVersionSelector.exe -f "CleanEnvironment.txt" -v

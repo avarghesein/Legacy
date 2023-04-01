@@ -1,0 +1,114 @@
+
+INCLUDE| "EnvironmentSettings.txt"
+
+IF_NOT| <SETUP>
+    QUIT|
+ENDIF|
+
+;Code Block, <Change If need any spcific handling>
+IF| <SETUP> = SYNGO
+    RUN| kill mplus*
+    RUN| kill csa*
+    RUN| kill ipt*
+    RUN| kill ivt*
+    RUN| kill cleanb*
+    RUN| kill Patex*
+    RUN| kill Patex B*
+    RUN| CMD /C killz.js
+    RUN| CMD /C stopz.js
+    RUN| CMD /C kill_mr
+
+    SET| DICOM_UID_ROOT=1.3.12.2.1107.5.99.1.19222
+    SET| DNM_TEMP=<SYNGO_DNM_TEMP>
+    SET| MERGECOM_CONF=<SYNGO_HOME>\config\merge
+    SET| MERGE_INI=<SYNGO_HOME>\config\merge\mergecom.ini
+    SET| MMM_TEMP=<SYNGO_MMM_TEMP>
+    SET| MPLUSCONFDIR=<SLUGGER_HOME>\MPlus\config
+    SET| MPLUSDATADIR=<SLUGGER_HOME>\MPlus\Data
+    SET| MPLUSHOME=<SLUGGER_HOME>\MPlus
+    SET| MPLUSI18NCORE=<SLUGGER_HOME>\MPlus\bin
+    SET| MPLUSINSTTYPE=<SYNGO_MPLUSINSTTYPE>
+    SET| MPLUSLOGDIR=<SLUGGER_HOME>\MPlus\Log
+    SET| MPLUSTEMPDIR=<SLUGGER_HOME>\MPlus\temp
+    SET| MPLUS_DBS_TEMP=<SYNGO_MPLUS_DBS_TEMP>
+    SET| PMTF_TEMP=<SYNGO_PMTF_TEMP>
+    BEGIN|
+ 	SET| PATH -= <MPLUS_V3_HOME>*
+	SET| PATH += <SLUGGER_HOME>\bin;<SLUGGER_HOME>\Mplus\bin;<SYNGO_HOME>\bin;<SYNGO_HOME>\utils;
+                     <SYNGO_HOME>\cpl;<SYNGO_HOME>\versant\vds605\bin;<UNIX_UTILS>\usr\local\wbin;<PERL_UTILS>\lib;
+                     <PERL_UTILS>\bin;<SYNGO_MPLUS_PLATFORM>\etc\bin;
+    END|
+    ENV_COMMIT|    
+    BEGIN|
+    	REG| [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build System\Components\Platforms\Win32 (x86)\Directories]
+             Include Dirs -=<MPLUS_V3_HOME>*
+	
+	REG| [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build System\Components\Platforms\Win32 (x86)\Directories]
+	     Include Dirs +=<SYNGO_HOME>\Include\STLPort;<SYNGO_HOME>\include;<SYNGO_HOME>\versant\vds605\h;<SLUGGER_HOME>\MPlus\include;
+
+	REG| [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build System\Components\Platforms\Win32 (x86)\Directories]
+             Library Dirs -=<MPLUS_V3_HOME>*
+
+        REG| [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build System\Components\Platforms\Win32 (x86)\Directories]
+             Library Dirs += <SYNGO_HOME>\lib;<SLUGGER_HOME>\MPlus\Lib\release;
+    END|
+    REG_COMMIT|
+
+ELSE|
+    RUN| kill mplus*
+    RUN| kill csa*
+    RUN| kill ipt*
+    RUN| kill ivt*
+    RUN| kill cleanb*
+    RUN| kill Patex*
+    RUN| kill Patex B*
+    RUN| CMD /C killz.js
+    RUN| CMD /C stopz.js
+    RUN| CMD /C kill_mr
+
+    SET| ALTIBASE_HOME=<MPLUS_V3_ALTIBASE_HOME>
+    SET| DICOM_UID_ROOT=1.2.392.200036.9116
+    SET| DNM_TEMP=<MPLUS_V3_MPLUSPLATFORM>\temp\MPlusTemp
+    SET| MERGECOM_CONF=<MPLUS_V3_MPLUSPLATFORM>\Config\merge
+    SET| MERGE_INI=<MPLUS_V3_MPLUSPLATFORM>\Config\merge\MERGE.INI
+    SET| MMM_TEMP=<MPLUS_V3_MPLUSPLATFORM>\temp\MPlusTemp
+    SET| MPLUSCONFDIR=<MPLUS_V3_MPLUSPLATFORM>\Config
+    SET| MPLUSDATADIR=<MPLUS_V3_MPLUSPLATFORM>\Data
+    SET| MPLUSHOME=<MPLUS_V3_MPLUSPLATFORM>
+    SET| MPLUSI18NCORE=<MPLUS_V3_MPLUSPLATFORM>\bin\release
+    SET| MPLUSINSTTYPE=<MPLUS_V3_MPLUSINSTTYPE>
+    SET| MPLUSLOGDIR=<MPLUS_V3_MPLUSPLATFORM>\Log
+    SET| MPLUSTEMPDIR=<MPLUS_V3_MPLUSPLATFORM>\temp
+    SET| MPLUS_DBS_TEMP=<MPLUS_V3_MPLUSPLATFORM>\temp\MPlusTemp
+    SET| PMTF_TEMP=<MPLUS_V3_MPLUSPLATFORM>\temp\MPlusTemp    
+    BEGIN|
+ 	SET| PATH -= <SYNGO_HOME>*
+        SET| PATH -= <SLUGGER_HOME>*
+        SET| PATH -= <UNIX_UTILS>*
+        SET| PATH -= <PERL_UTILS>*
+        SET| PATH -= <SYNGO_MPLUS_PLATFORM>*
+	SET| PATH += <MPLUS_V3_MPLUSPLATFORM>\bin\release;
+		     <MPLUS_V3_MPLUSPLATFORM>\utils\release;
+                     <MPLUS_V3_MPLUSPLATFORM>\etc\merge\mc3bin;
+                     <MPLUS_V3_MPLUSPLATFORM>\etc\bin\release;
+                     <MPLUS_V3_MPLUSPLATFORM>\etc\bin;
+                     <MPLUS_V3_ALTIBASE_HOME>\bin;
+    END|
+    ENV_COMMIT|
+    BEGIN|
+    	REG| [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build System\Components\Platforms\Win32 (x86)\Directories]
+             Include Dirs -=<SYNGO_HOME>*;<SLUGGER_HOME>*;
+	
+	REG| [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build System\Components\Platforms\Win32 (x86)\Directories]                              Include Dirs +=<MPLUS_V3_MPLUSPLATFORM>\include\STLPort;<MPLUS_V3_MPLUSPLATFORM>\INCLUDE;
+
+	REG| [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build System\Components\Platforms\Win32 (x86)\Directories]
+             Library Dirs -=<SYNGO_HOME>*;<SLUGGER_HOME>*;
+
+        REG| [HKEY_CURRENT_USER\Software\Microsoft\DevStudio\6.0\Build System\Components\Platforms\Win32 (x86)\Directories]
+             Library Dirs += <MPLUS_V3_MPLUSPLATFORM>\LIB\RELEASE;<MPLUS_V3_MPLUSPLATFORM>\LIB\DEBUG;
+    END|
+    REG_COMMIT|
+   
+ENDIF|
+
+INCLUDE| "StartMplusOrSyngo.txt"
